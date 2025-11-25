@@ -1,0 +1,60 @@
+:root {
+    --primary-color: #e38773;
+    --secondary-color: #252525;
+}
+
+header {
+    background: url(images/chan-bg.png) no-repeat;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    background: url(images/footer-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-primary {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color) !important;
+    border-color: var(--secondary-color) !important;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    font-weight: bold;
+}
+
+#formCau3 {
+    border-color: var(--primary-color) !important;
+}
+
+form > div > input, textarea {
+    border-color: var(--primary-color) !important;
+}
+
+#cau3 img {
+    position: absolute;
+    width: 680px;
+    height: 420px;
+    top: 0;
+    right: 0;
+}
+
+#cau3 form {
+    position: absolute;
+    background-color: white;
+    top: 1rem;
+    left: 0;
+}
+
+#cau3 {
+    min-height: 600px;
+}
