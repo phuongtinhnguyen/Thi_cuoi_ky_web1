@@ -16,6 +16,11 @@ footer {
     background-position: center;
 }
 
+#titleBaithi {
+    position: absolute;
+    margin-left: 200px;
+}
+
 .btn-primary {
     background-color: var(--primary-color) !important;
     border-color: var(--primary-color) !important;
