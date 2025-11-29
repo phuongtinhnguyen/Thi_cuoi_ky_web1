@@ -42,6 +42,8 @@
              </div>
         </header>
 
+
+
         <main class="container">
             <div id="cau2" class="py-3 text-center">
                 <h1 class="fw-bold pt-5">Cau 2</h1>
@@ -91,10 +93,15 @@
 
 
 
+
+
         <footer class="text-center container-fluid text-white py-3">
             <!-- place footer here -->
              <h3>WEB1-DTTX-HK1-2324</h3>
         </footer>
+
+
+
 
 
         <!-- Button trigger modal da move qua cho nut Readmore -->
@@ -177,6 +184,8 @@
             let template = Handlebars.compile(source);
             document.querySelector("#view").innerHTML = template(jsonData)
 
+
+            
             /* Xu ly nhan nut Readmore */
             document.querySelectorAll('.btn-outline-primary').forEach(item => {
                 item.addEventListener('click', (e) => {

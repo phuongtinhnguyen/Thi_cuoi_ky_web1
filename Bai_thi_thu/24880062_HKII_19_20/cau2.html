@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>24880062</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+
+        <!-- Web1 CSS -->
+        <link rel="stylesheet" href="css/24880062.css">
+    </head>
+
+    <body>
+
+
+
+        <header>
+            <!-- place navbar here -->
+            <h3 id="titleBaithi1" class="text-center pt-5">BAI THI CUOI KY MON LAP TRINH WEB 1</h3>
+            <h1 id="titleBaithi2" class="text-white text-center">DTTX - HK2/2019-2020</h1>
+
+            <!-- có thể dùng nav.container-fluid sau do bs5-nav-ul thay the -->
+            <!-- Trai dai het mang hình -> container-fluid -->
+            <nav id="menu" class="container-fluid bg-brown py-3">
+                <ul class="nav justify-content-center  ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" aria-current="page">CAU 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cau2.html">CAU 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cau3.html">CAU 3</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+
+
+        <main class="py-5">
+            <div id="formcau2" class="bg-organe container-fluid my-5 py-5">
+                <form id="formcau2_gui_di" action="#" method="post" class="container bg-box p-5 text-center rounded-4">
+                    <legend>
+                        <h6>YOUR MESSAGE</h6>
+                        <h1>TO WEB1</h1>
+
+
+                        <div class="container my-5">
+                            <form action="#" method="post">
+                                <div class="row">
+                                    <!-- Cột trái: 3 input -->
+                                    <div class="col-md-6 d-flex flex-column">
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" name="name" placeholder="Your Name *"
+                                            required 
+                                            oninput="this.setCustomValidity('')"
+                                            oninvalid="this.setCustomValidity('Please enter your name!')">
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" name="email" placeholder="Your Email *"
+                                            required 
+                                            pattern="[a-z0-9.%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" 
+                                            oninput="this.setCustomValidity('')"
+                                            oninvalid="this.setCustomValidity('Please match the requested format.')">
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" name="phone" placeholder="Your Phone *"
+                                            required 
+                                            oninput="this.setCustomValidity('')"
+                                            oninvalid="this.setCustomValidity('Please enter your phone!')">
+                                        </div>
+                                    </div>
+
+                                    <!-- Cột phải: textarea cao bằng cột trái -->
+                                    <div class="col-md-6 d-flex mb-3">
+                                        <textarea class="form-control flex-grow-1" name="message" placeholder="Your Message *"
+                                        required 
+                                        oninput="this.setCustomValidity('')"
+                                        oninvalid="this.setCustomValidity('Please enter your message!')"></textarea>
+                                    </div>
+                                </div>
+
+                                <!-- Nút submit -->
+                                <div class="text-center mt-4">
+                                    <button type="submit" class="btn btn-primary py-2 px-4 bg-organe border-0">SEND MESSAGE</button>
+                                </div>
+                            </form>
+                        </div>
+
+
+
+
+
+                    </legend>
+                </form>
+            </div>
+
+        </main>
+
+
+
+
+        <footer class="text-center container-fluid bg-brown text-center">
+            <!-- place footer here -->
+             <h5 class="text-white text-center py-5">Copyright &copy by 24880062 - Nguyen Phuong Tinh</h5>
+        </footer>
+
+
+
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Handlebarjs -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js" integrity="sha512-E1dSFxg+wsfJ4HKjutk/WaCzK7S2wv1POn1RRPGh8ZK+ag9l244Vqxji3r6wgz9YBf6+vhQEYJZpSjqWFPg9gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+        <script>
+            document.getElementById("formcau2_gui_di").addEventListener("submit", 
+            function(e) {
+                e.preventDefault(); // chặn hành động submit mặc định
+                alert("Form được bấm nhưng không gửi đi!");
+            });
+
+
+
+        </script>
+
+    </body>
+</html>

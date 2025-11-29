@@ -1,0 +1,126 @@
+:root {
+    --brown-color: rgba(47, 23, 15, 0.9);
+    --organe-color: #E6A756;
+}
+
+body {
+    background: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+footer {
+    height: 120px;
+    padding-bottom: 0px;
+}
+
+.bg-box {
+    background-color: rgba(255, 255, 255, 0.85);
+    color: black;
+}
+
+.text-orange {
+    color: var(--organe-color);
+}
+
+.bg-brown {
+    background-color: var(--brown-color);
+    color: white;
+}
+
+.bg-organe {
+    background-color: var(--organe-color);
+    color: white;
+}
+
+#titleBaithi1 {
+    color: var(--organe-color);
+}
+
+#titleBaithi2 {
+    font-size: 70px;
+    font-weight: lighter;
+    opacity: 0.85;
+}
+
+
+#menu a {
+    color: white;
+    font-weight: bold;
+    
+}
+
+#menu a.active {
+    color: var(--organe-color);
+}
+
+
+
+/* a.cauX:hover {
+    color: var(--organe-color);
+}
+
+a.cauX.active {
+    color: var(--organe-color) !important;
+} */
+
+
+/* Canh cho main*/
+.position-relative {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 800px;
+}
+
+#formcau2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 800px;
+}
+
+#bannercau1 {
+    height: 1000px;
+}
+
+#cau1pic {
+    position: absolute;
+    width: 1500px;
+    top: 20px;
+    justify-content: center;   /* canh giữa ngang */
+
+}
+
+#cau1text {
+    position: absolute;
+    /* width: 800px; da co w-50 cua class roi*/ 
+    top:500px;
+    /* left: 20px; danh cho muon keo hinh sang trai*/
+    justify-content: left !important;
+}
+
+
+/* Cau 2 */
+
+form {
+    border-style: double !important;
+    border-width: 1rem;
+    border-color: var(--organe-color);
+}
+
+
+
+/* Cau 3 */
+.box-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.box-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
